@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+font-family: 'Roboto', sans-serif;
+line-height: 1.4;
+color: black;
+overflow-x: hidden;	
+size: 20px;
+
+}
+.container {
+	max-width: 1100px;
+	margin: auto;
+}
+.text-primary{
+	color: hotpink;
+}
+/*navbar*/
+#navbar {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	
+	color: #fff;
+	padding: 1.5rem 8rem;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	border-bottom : 3px solid white;
+	background-image:
+  linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), 
+  url('https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-attachment: fixed;
+  background-position: auto,center top;
+  
+}
+#navbar ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+#navbar h2 a{
+	color: #fff;
+	text-decoration :none; 
+}
+#navbar li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 1rem;
+	font-size: 1.5rem;
+	margin : 0 0.5rem;
+	border-radius: 5px;
+	font-weight:1.4; 
+	font-family: 'Roboto', sans-serif;
+	transition: background-color 0.3s;
+}
+#navbar li a:hover{
+	background-color: #3593ff;
+}
+/*showcase area*/
+#showcase {
+	background:  url(https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat center center/cover;
+	height: 91.7vh;
+	background-attachment: fixed;
+	background-position: center top;
+}
+.showcase-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 81px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+}
+.showcase-content h1 {
+	font-size: 4rem;
+    margin-bottom:  2rem;
+}
+.showcase-content .btn {
+font-size: 1.5em;
+font-weight: 1.4em;
+padding: 1rem 10rem;
+}
+.btn {
+	color: white;
+	text-decoration : none;
+	display:  inline-block;
+	padding: 1rem 2rem;
+	border:  1px solid grey;
+	border-radius: 10px;
+	font-weight: bold;
+
+}
+.showcase-content .btn:hover {
+	background: grey;
+	color: #fff;
+	transition:  color:0.3s background:0.3s;
+}
+/*About*/
+#about {
+	padding: 5rem 0;
+}
+#about h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+#about h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+#about p.lead {
+	margin-bottom: 1rem;
+}
+#about .about-content {
+	display: flex;
+}
+#about .about text ,
+#about .about-image {
+	flex=1;
+	
+	
+}
+#about .about-text {
+	text-align : justify-content; 
+	
+}
+#about .about-image img {
+	display: block;
+	margin-left: auto;
+	width: 75%;
+	border-radius: 60%;
+	margin-top :60px;
+	
+}
+.bg-light{
+	background :#f4f4f4;
+	color: #333; 
+}
+.bg-dark{
+	background: #333;
+	color: #fff;
+}
+/**skills**/
+#skills {
+	padding: 5rem 0;
+}
+#skills h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+#skills h3{
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+#skills .boxes{
+	display: flex;
+	flex-flow: wrap;
+}
+#skills .box {
+	background :#fff; 
+    flex: 1;
+    padding: 3rem;
+    margin: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #d1d1d1;
+    font-size: 1.3rem;
+    font-weight: 1.4;
+}
+#skills .feature{
+ color: #fff;
+ text-align: center;
+ padding:  1rem;
+ background:  #3693ff;
+ border-radius:  50%;
+ margin: 0 1rem;
+ margin-bottom: 2rem;
+}
+/*projects*/
+#Projects {
+	background: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80) no-repeat center center/cover;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center top;
+}
+.Projects-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+	padding: 5rem 0;
+}
+#Projects h2{
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 1.4;
+	margin-bottom: 3rem;
+	color: #fff;
+}
+#Projects .boxes {
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+}
+#Projects .box {
+	background: rgba(54,147,255,0.7);
+	display: flex;
+	padding: 2rem;
+	align-items: center;
+	border-radius: 15px;
+}
+#Projects .box{
+	margin-bottom: 3rem;
+} 
+#Projects p{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	font-size: 1.2rem;
+}
+#Projects a{
+	color: #fff;
+}
+#Projects a.hotel {
+	font-family: 'Lato', sans-serif; 
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 20;
+	border-radius: 5px; 
+	text-shadow: #FC0 1px 0 10px; 
+	font-weight: 600;
+	font-style: italic;
+    padding: 15px;
+}
+#Contact {
+	padding: 5rem 0;
+}
+#Contact h2{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 8rem;
+}
+#Contact h3{
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 3rem 0;
+	margin-top: 5rem; 
+}
+#Contact .form-box {
+	background: #fff;
+	padding: 3rem;
+	box-shadow: 2px 2px 5px #d1d1d1;
+	border-radius: 10px;
+}
+#Contact .form-group{
+	margin-bottom: 2rem;
+}
+#Contact .form-group label {
+	display: block;
+	margin-bottom: 0.5rem;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 1.1rem;
+}
+#Contact .form-group input,
+#Contact .form-group textarea {
+	width: 80%;
+	margin-left: 10%;
+	font-size: 1.3rem;
+	padding: 1rem;
+	border: 0.5px solid #333;
+	border-radius: 5px;
+}
+#Contact .form-group textarea {
+	font-family: Arial,sans-serif;
+}
+
+#Contact .contact-btn {
+	width: 80%;
+	margin-left: 10%;
+	display: inline-block;
+	padding: 1rem 3rem;
+	border:none;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	background: #3693ff;
+	color: #fff;
+	margin-bottom: 2rem;
+	cursor: pointer;
+	transition: background 0.3sec;
+}
+#Contact .contact-btn:hover {
+	background: #0378ff;
+}
+#Contact .form-container {
+	position: relative;
+}
+#Contact .mail-icon{
+	font-size: 4rem;
+	background: #3693ff;
+	color: #fff;
+	display: inline-block;
+	padding: 1.5rem 2rem;
+	border-radius: 50%;
+	position: absolute;
+	top: -7%;
+	left: 45%;
+}
+footer {
+	padding: 2.5rem;
+}
+footer p{
+	text-align: center;
+}
+	</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatibe" content="IE=edge">
+    <title>Radhika Soni</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+<body id="home">
+    <nav id="navbar">
+        <h2>
+            <a href="#home"><span class="text-primary" style="font-size:25px;">Radhika</span> Soni </a>
+        </h2>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#Projects">Projects</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <header id="showcase">
+        <div class="showcase-content">
+            <div class="container"><br> 	
+                <h1 style="font-size:45px;">
+                    Radhika Soni
+                    <br>
+                    <span class="text-primary" style="font-size:35px;"> Girl who loves to code :)</span>
+                </h1>
+				<div class="about-image" >
+                    <img src="C:\Users\RADHIKA SONI\Downloads\bg.jpg" width="200" height="210" style="border-radius: 50%;" alt="My Picture">
+                </div><br>
+                <a href="https://drive.google.com/file/d/1D0RpQd3P2s0T31DQHt28De2sUUZaS6_f/view?usp=sharing" target="_blank" class="btn">Resume</a>&nbsp;&nbsp;
+                <a href="https://github.com/Radhika14soni" target="_blank" class="btn">GitHub</a><br><br>
+                <a href="https://leetcode.com/3_RADHIKA_SONI/" target="_blank" class="btn">Leetcode</a>&nbsp;&nbsp;
+                <a href="https://www.codechef.com/users/khushi314" target="_blank" class="btn">Codechef</a>
+				
+            </div>
+        </div>
+    </header>
+    <!--- section-About-->
+    <section id="about">
+        <div class="container">
+            <h2 class="about-heading">
+                About
+                <span class="text-primary"> Myself </span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    
+                    <p class="lead" style="font-size:25px;">Hello! This is Radhika Soni. I'm a Final year Computer Applications student. My Current Cgpa is 8.30. I've secured first rank throughout my last semesters and have received Gold Medal for the same. I have done my higher secondary education from Edunova secondary Highschool and primary from St. Arnold's High School. 
+					</p>
+                    
+                    <p class="lead" style="font-size:25px;"> I want to be an excellent Software Engineer and work for the betterment of the society. I'm a good teamplayer.My strength is not to give up easily.I'm very much fascinated by Technology. I love to code. Also in my leisure time I like to listen Music, make sketches and baking. :)</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+	<section id="Projects">
+        <div class="Projects-bg">
+            <div class="container">
+                <h2>
+                    <span class="text-primary"> Projects </span>
+                </h2>
+                <div class="box">
+                    <p>
+						I made a full featured Online Blogging Web-Application in Flask Framework. It has several features like create account, search post, create/update delete post etc.
+                        See project : 
+                        <a class="hotel" href="https://github.com/Radhika14soni/Full-Featured-Blogging-Web-Application" target="_blank">Blogging Web-Application</a>
+                    </p>
+                </div>
+                <div class="box">
+                    <p>
+                        I made a classis Tic-Tac_Toe game in Android.
+                        <a class="hotel" href="https://github.com/Radhika14soni/Android-Tic-Tac-Toe" target="_blank">Tic-Tac-Toe</a>
+                    </p>
+                </div>
+                               
+                <div class="box">
+                    <p>Made a personalised website showing what all skills I have and some of my projects. You guessed it right! It's the one you are looking at right now (thought of mentioning it too :) )</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="bg-light">
+        <div class="container">
+            <h2>
+                Here is What
+                <span class="text-primary">I Have Learned so Far </span>
+            </h2>
+            <div class="boxes">
+                <div class="box col-xs-12">
+                    <h3>
+                        <span class="text-primary"> Programming Languages </span>
+                    </h3>
+                    <div class="feature">
+                        Python
+                    </div>
+                    <div class="feature">
+                        JAVA
+                    </div>
+                    <div class="feature">
+                        JAVASCRIPT
+                    </div>
+                    <div class="feature">
+                        C++
+                    </div>
+                    <div class="feature">
+                        Php
+                    </div>
+					<div class="feature">
+                        Android
+                    </div>
+                </div>
+                <div class="box col-xs-12">
+                    <h3>
+                        <span class="text-primary"> Development Skills </span>
+                    </h3>
+					<div class="feature">
+                        GIT
+                    </div>
+                    <div class="feature">
+                        HTML5
+                    </div>
+                    <div class="feature">
+                        CSS3
+                    </div>
+                    <div class="feature">
+                        Django
+                    </div>
+                    <div class="feature">
+                        Flask
+                    </div>
+                    
+                </div>
+
+            </div>
+           </div>
+        </div>
+    </section>
+
+    
+    <section id="Contact" class="bd-light">
+        <div class="container">
+            <h2>
+                Give Your
+                <span class="text-primary">Feedback</span> Here
+            </h2>
+            <div class="form-container">
+                <div class="mail-icon">
+                    <span>&#9993;</span></span>
+                </div>
+                <div class="form-box">
+                    <h3>
+                        Shoot me a
+                        <span class="text-primary">Message</span>
+                    </h3>
+                    <form onsubmit="post()" action="https://formspree.io/moqknokk" method="POST" >
+                    <form onsubmit="post()" method="post" action="#">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="name" placeholder="Enter Your First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last_name" placeholder="Enter Your Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="_replyto" placeholder="Enter Your Email ">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea rows="7" name="message" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        <input type="submit" value="Send Message" class="contact-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark">
+        <p>Copyright &copy: RadhikaSoni</p>
+    </footer>
+    <script src="js/home.js"></script>
+</body>
+</html>
